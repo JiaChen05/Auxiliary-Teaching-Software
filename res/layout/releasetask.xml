@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" >
+        
+       <TextView
+           android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="发布任务"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h2" />
+       
+       
+        
+     </RelativeLayout>
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+    
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="任务标题:"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h2" />
+          
+          <EditText
+            android:id="@+id/ttitle"  
+            android:layout_width="180dp"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_bg"
+            android:ems="10" />
+        
+        </RelativeLayout>
+    
+      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+        <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+         >
+
+        <RadioButton
+             android:id="@+id/tasktype1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="课堂目标问题" 
+            android:layout_centerHorizontal="true"
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2" />
+
+        <RadioButton
+             android:id="@+id/tasktype2"
+            android:layout_height="wrap_content"
+            android:text="随堂测试题目"
+            android:layout_centerHorizontal="true"
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2"  />
+        <RadioButton
+             android:id="@+id/tasktype3"
+            android:layout_height="wrap_content"
+            android:text="纸质作业题目"
+            android:layout_centerHorizontal="true"
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2"  />
+        <RadioButton
+             android:id="@+id/tasktype4"
+            android:layout_height="wrap_content"
+            android:text="实验课题目"
+            android:layout_centerHorizontal="true"
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2"  />
+
+
+    </RadioGroup>
+        
+      
+       
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+    
+          <TextView
+                android:id="@+id/noticed"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务描述:"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h2" />
+
+        <EditText
+            android:layout_below="@+id/noticed"
+            android:id="@+id/tde"
+             android:layout_height="120dp"
+            android:layout_width="fill_parent"
+            
+            android:background="@drawable/edit_bg" />
+         </RelativeLayout>
+         
+          
+       
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/releaset"
+                style="@style/UserButtonStyle"
+                android:text="发布任务" />
+
+
+       
+    </LinearLayout>
+
+</LinearLayout>

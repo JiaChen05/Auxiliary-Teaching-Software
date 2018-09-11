@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testbase.fragment3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <activity android:name="com.example.testbase.MainActivity" android:label="@string/app_name" android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter></activity>
+        <activity  android:name="com.example.testbase.RegisterActivity" android:label="@string/app_name" android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.testbase.MainTab"
+            android:label="@string/app_name" >
+         </activity>
+         <activity
+            android:name="com.example.testbase.MainTab_t"
+            android:label="@string/app_name" >
+         </activity>
+          <activity
+            android:name="com.example.testbase.Notification.ReleaseNotice"
+            android:label="@string/app_name" >
+         </activity>
+          <activity
+            android:name="com.example.testbase.Task.ReleaseTask"
+            android:label="@string/app_name" >
+         </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>

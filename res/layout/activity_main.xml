@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" >
+        
+       <TextView
+           android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="登录"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h2" />
+        
+     </RelativeLayout>
+   
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+    
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="账号:"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h1" />
+          
+          <EditText
+            android:id="@+id/account"  
+            android:layout_width="220dp"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_bg"
+            android:ems="10" />
+        
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+    
+          <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h1" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_width="220dp"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_bg" />
+        
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/GotoRegister"
+                style="@style/UserButtonStyle"
+                android:text="@string/register" />
+
+            <Button
+                 android:id="@+id/login"
+                style="@style/UserButtonStyle"
+                android:layout_alignParentRight="true"
+                android:text="@string/login" />
+        </RelativeLayout>
+
+       
+    </LinearLayout>
+
+</LinearLayout>

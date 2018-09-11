@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+   android:orientation="vertical"  
+        android:background="@color/base_bg_color"
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent">  
+    
+    <RelativeLayout 
+        android:layout_weight="1.3"
+        android:orientation="vertical"  
+        android:layout_width="fill_parent"  
+       android:layout_height="0dp" >
+       
+    <ImageView  
+       android:id="@+id/mypicture"  
+       android:layout_width="50dp"  
+       android:layout_height="50dp"  
+      android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+       android:src="@drawable/user1"/> 
+       
+     <TextView  
+         android:layout_width="wrap_content"  
+         android:layout_height="wrap_content"  
+         android:id="@+id/myname"  
+         android:textSize="20sp"  
+         android:text="姓名"  
+        android:layout_centerHorizontal="true"
+         android:layout_below="@+id/mypicture"
+         android:textColor="#000000"  />
+     
+     </RelativeLayout>
+    
+    <!-- 我们会自己定义listview的显示方式（在另外一个布局文件里边）不用默认的方式   
+         如果自定义listview的显示方式这里这个android:id="@id/android:list" 必须这样写 -->  
+    <!-- android:drawSelectOnTop="false"此属性用来设置listview上的背景颜色会不会  
+     挡住（覆盖）内容 , 如果这是为false就表示不会覆盖掉 -->   
+    <ExpandableListView                  
+        android:layout_width="fill_parent"                  
+        android:layout_height="0dp"               
+        android:layout_weight="3" 
+        android:id="@+id/Info"                
+        android:drawSelectorOnTop="false"/>   
+</LinearLayout>  

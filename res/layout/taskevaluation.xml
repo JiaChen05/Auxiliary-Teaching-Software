@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    
+        
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+    
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:text="任务ID:"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h1" />
+          
+          <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/taskID"  
+            android:layout_width="220dp"
+            android:layout_height="@dimen/user_edit_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_bg"
+            android:ems="10" />
+        
+        </RelativeLayout>
+       
+  
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+         >
+
+        <RadioButton
+             android:id="@+id/score1"  
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="1分" 
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2" />
+
+        <RadioButton
+            android:id="@+id/score2" 
+            android:layout_height="wrap_content"
+            android:text="2分"
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2"  />
+
+        <RadioButton
+            android:id="@+id/score3" 
+            android:layout_width="wrap_content"
+            android:text="3分" 
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2" />
+
+         <RadioButton
+             android:id="@+id/score4" 
+            android:layout_width="wrap_content"
+            android:text="4分" 
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2" />
+         
+         
+         <RadioButton
+             android:id="@+id/score5" 
+            android:layout_width="wrap_content"
+            android:text="5分" 
+             android:textColor="@color/biz_tie_reply"
+         android:textSize="@dimen/txt_h2" />
+    </RadioGroup>
+    </RelativeLayout>
+    
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/te_submit"
+                style="@style/UserButtonStyle"
+                android:text="@string/submit"
+                android:layout_centerHorizontal="true" />
+           
+            <TextView
+           android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="注：1-5分由易到难，1分表示任务最简单，5分表示最难"
+                android:textColor="@color/biz_tie_reply"
+                android:textSize="@dimen/txt_h3" />
+        </RelativeLayout>
+
+        
+  
+
+</LinearLayout>
